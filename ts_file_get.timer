@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for tailscale file get
+
+[Timer]
+OnUnitActiveSec=3600s
+OnBootSec=10s
+
+[Install]
+WantedBy=timers.target
