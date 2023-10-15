@@ -3,4 +3,5 @@ Description=Retrieve tailscale files
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash -c 'sudo tailscale file get ~/Pictures/tailscale/ && sudo chown ourlux4:ourlux4 ~/Pictures/tailscale/*'
+user=ourlux4
+ExecStart=/usr/bin/bash -c 'sudo tailscale file get /home/ourlux4/Pictures/tailscale/ && sudo chown ourlux4:ourlux4 /home/ourlux4/Pictures/tailscale/*'
